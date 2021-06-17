@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>XylophoneKit</title>
   </head>
   <body>
@@ -25,56 +25,36 @@
           </ul>
         </div>
     </nav>
-    <table class="table table-striped table-dark" id="displaytable" style="display: none;">
-      <thead>
-          <tr>
-              <th>Keys</th>
-              <th>xylophone Notes</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>A</td>
-              <td>c</td>
-              
-          </tr>
-          <tr>
-              <td>S</td>
-              <td>d</td>
-              
-          </tr>
-          <tr>
-              <td>D</td>
-              <td>e</td>
-              
-          </tr> 
-          <tr>
-              <td>F</td>
-              <td>f</td>
-              
-          </tr>
-          <tr>
-              <td>G</td>
-              <td>g</td>
-              
-          </tr>
-          <tr>
-              <td>H</td>
-              <td>a</td>
-              
-          </tr>  
-          <tr>
-              <td>J</td>
-              <td>b</td>
-              
-          </tr>
-          <tr>
-              <td>K</td>
-              <td>c2</td>
-              
-          </tr>
-      </tbody>
-    </table>
+    <table class="rounded-t-lg m-5 w-2/3 mx-auto bg-gray-800 text-gray-200" id="keymap">
+        <tr class="text-left border-b border-gray-300">
+          <th class="px-4 py-3">Key</th>
+          <th class="px-4 py-3">Tabla</th>
+        </tr>
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">A</td>
+          <td class="px-4 py-3">Left Tabla - Kinar/Chanti</td>
+        </tr> 
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">S</td>
+          <td class="px-4 py-3">Left Tabla - Maidan/Sur</td>
+        </tr> 
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">D</td>
+          <td class="px-4 py-3">Left Tabla - Syahi/Gab</td>
+        </tr> 
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">J</td>
+          <td class="px-4 py-3">Right Tabla - Syahi/Gab</td>
+        </tr> 
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">K</td>
+          <td class="px-4 py-3">Right Tabla - Maidan/sur</td>
+        </tr> 
+        <tr class="bg-gray-700 border-b border-gray-600">
+          <td class="px-4 py-3">L</td>
+          <td class="px-4 py-3">Right Tabla - Kinar/Chanti</td>
+        </tr> 
+      </table>
     <main>
         <div class="xylophone">
             <div class="note note-c " id="red" style=" --i: -1;" data-key="a"><kbd>A</kbd></div><audio data-key="a"   id="a" src="audio/c.wav"></audio>
