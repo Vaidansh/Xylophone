@@ -16,6 +16,15 @@ let h = document.getElementById("h")
 let j = document.getElementById("j")
 let k = document.getElementById("k")
 
+let red = document.getElementById("red")
+let green = document.getElementById("green")
+let purple = document.getElementById("purple")
+let yellow = document.getElementById("yellow")
+let orange = document.getElementById("orange")
+let l_blue = document.getElementById("l-blue")
+let cyan = document.getElementById("cyan")
+let pink = document.getElementById("pink")
+
 function aplay()
 {
     a.load()
@@ -128,11 +137,11 @@ document.onkeydown = function(here)
     }
 }
 
-note_c.addEventListener('click', aplay);
-note_d.addEventListener('click', splay);
-note_e.addEventListener('click', dplay);
-note_f.addEventListener('click', fplay);
-note_g.addEventListener('click', gplay);
-note_a.addEventListener('click', hplay);
-note_b.addEventListener('click', jplay);
-note_c2.addEventListener('click', kplay);
+red.addEventListener('click', aplay);
+green.addEventListener('click', splay);
+purple.addEventListener('click', dplay);
+yellow.addEventListener('click', fplay);
+orange.addEventListener('click', gplay);
+l_blue.addEventListener('click', hplay);
+cyan.addEventListener('click', jplay);
+pink.addEventListener('click', kplay);
